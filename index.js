@@ -35,10 +35,10 @@ function nextfun(){
   // var img1=document.querySelector("button").querySelector("img");
   // img1.src="images/pause.png";
   var imp=document.querySelector("audio");
-  var part1=document.querySelector("audio").src.slice(0,87);
+  var part1=songs/;
   var str=document.querySelector("audio").src;
   // var char=str.charAt(str.length-5);
-  var char = document.querySelector("audio").src.slice(87,str.length-4);
+  var char=document.querySelector("audio").src.slice(11,str.length-4);
   var num=parseInt(char)+1;
   if (num===12){
     num=0;
@@ -55,9 +55,9 @@ function nextfun(){
 // TO AUTO PLAY THE SONGS
 function fun(){
   var imp=document.querySelector("audio");
-  var part1=document.querySelector("audio").src.slice(0,87);
+  var part1=songs/;
   var str=document.querySelector("audio").src;
-  var char=document.querySelector("audio").src.slice(87,str.length-4);
+  var char=document.querySelector("audio").src.slice(11,str.length-4);
   var num=parseInt(char)+1;
   if (num===12){
     num=0;
@@ -73,9 +73,9 @@ function prefun(){
   // var img1=document.querySelector("button").querySelector("img");
   // img1.src="images/pause.png";
   var imp=document.querySelector("audio");
-  var part1=document.querySelector("audio").src.slice(0,87);
+  var part1=songs/;
   var str=document.querySelector("audio").src;
-  var char = document.querySelector("audio").src.slice(87,str.length-4);
+  var char=document.querySelector("audio").src.slice(11,str.length-4);
   var num=parseInt(char)-1;
   if (num<0){
     num=11;
